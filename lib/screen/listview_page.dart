@@ -6,6 +6,7 @@ class listview_page extends StatelessWidget {
   }) : super(key: key);
   List<Widget> list = [
     ItemWidget(title: 'List Item 123'),
+    ItemWidget(title: 'List Item 5'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class ItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(8),
-      color: Colors.grey[200],
+      color: Colors.grey[300],
       child: Text(title),
     );
   }
