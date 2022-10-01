@@ -4,8 +4,10 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold(
-        appBar: AppBar(
-      title: Text('List View Tutorial'),
-    )),
+      appBar: AppBar(
+        title: Text('List View Tutorial'),
+      ),
+      body: Container(),
+    ),
   ));
 }
