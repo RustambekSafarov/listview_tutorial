@@ -7,8 +7,12 @@ class listview_page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.redAccent,
+    return ListView(
+      children: [
+        Text('List Item 1'),
+        Text('List Item 2'),
+        Text('List Item 3'),
+      ],
     );
   }
 }
