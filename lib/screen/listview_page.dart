@@ -5,9 +5,10 @@ class listview_page extends StatelessWidget {
     Key? key,
   }) : super(key: key);
   List<Widget> list = [
-    Text('List Item 1'),
-    Text('List Item 2'),
-    Text('List Item 5'),
+    Container(
+      padding: EdgeInsets.all(8),
+      child: Text('List item 1'),
+    )
   ];
   @override
   Widget build(BuildContext context) {
