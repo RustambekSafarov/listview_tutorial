@@ -7,6 +7,17 @@ class listview_page extends StatelessWidget {
   List<Widget> list = [
     Container(
       padding: EdgeInsets.all(8),
+      color: Colors.grey[200],
+      child: Text('List item 1'),
+    ),
+    Container(
+      padding: EdgeInsets.all(8),
+      color: Colors.grey[200],
+      child: Text('List item 2'),
+    ),
+    Container(
+      padding: EdgeInsets.all(8),
+      color: Colors.grey[200],
       child: Text('List item 1'),
     )
   ];
