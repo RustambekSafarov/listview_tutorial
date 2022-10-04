@@ -52,6 +52,8 @@ class _listview_pageState extends State<listview_page> {
     for (String item in countries.keys) {
       countryList.add(ListTile(
         title: Text(item),
+        leading: Text(countries[item].toString()),
+        trailing: Icon(Icons.keyboard_arrow_right),
       ));
     }
 
