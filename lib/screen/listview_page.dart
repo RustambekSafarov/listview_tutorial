@@ -76,6 +76,9 @@ class _listview_pageState extends State<listview_page> {
       itemCount: name.length,
       itemBuilder: ((context, index) {
         return ListTile(
+          onTap: () {
+            print('Tap $index');
+          },
           title: Text('${index + 1} ${name[index]}'),
         );
       }),
