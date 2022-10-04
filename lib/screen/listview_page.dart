@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:listview_tutorial/components/item_widget.dart';
 import 'package:listview_tutorial/components/icon_widget.dart';
 
-class listview_page extends StatelessWidget {
+class listview_page extends StatefulWidget {
   listview_page({
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<listview_page> createState() => _listview_pageState();
+}
+
+class _listview_pageState extends State<listview_page> {
   Map<String, String> countries = {
     'India': '🇮🇳',
     'USA': '🇺🇸',
@@ -39,22 +45,20 @@ class listview_page extends StatelessWidget {
     'Egypt': '🇪🇬',
     'Uzbekistan': '🇺🇿'
   };
-  List<Widget> list = [
-    ListTile(
-      title: Text('Two-line item'),
-      subtitle: Text('Secondary text'),
-      leading: Icon(Icons.wifi),
-      trailing: Icon(Icons.remove_circle),
-    ),
-    ListTile(
-      title: Text('Item'),
-      subtitle: Text('Secondary text'),
-    )
-  ];
+
+  List<Widget> getCountries() {
+    List<Widget> countryList = [];
+    for (int i = 0; i < 3; i += 1) {
+      countryList.add(Text('$i'));
+    }
+
+    return countryList;
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: list,
+      children: getCountries(),
     );
   }
 }
