@@ -6,6 +6,39 @@ class listview_page extends StatelessWidget {
   listview_page({
     Key? key,
   }) : super(key: key);
+  Map<String, String> countries = {
+    'India': '🇮🇳',
+    'USA': '🇺🇸',
+    'UK': '🇬🇧',
+    'Canada': '🇨🇦',
+    'Australia': '🇦🇺',
+    'New Zealand': '🇳🇿',
+    'Japan': '🇯🇵',
+    'China': '🇨🇳',
+    'Russia': '🇷🇺',
+    'Germany': '🇩🇪',
+    'France': '🇫🇷',
+    'Italy': '🇮🇹',
+    'Spain': '🇪🇸',
+    'Nepal': '🇳🇵',
+    'Bhutan': '🇧🇹',
+    'Sri Lanka': '🇱🇰',
+    'Bangladesh': '🇧🇩',
+    'Pakistan': '🇵🇰',
+    'Afghanistan': '🇦🇫',
+    'Iran': '🇮🇷',
+    'Iraq': '🇮🇶',
+    'Saudi Arabia': '🇸🇦',
+    'Kuwait': '🇰🇼',
+    'UAE': '🇦🇪',
+    'Qatar': '🇶🇦',
+    'Oman': '🇴🇲',
+    'Yemen': '🇾🇪',
+    'Syria': '🇸🇾',
+    'Turkey': '🇹🇷',
+    'Egypt': '🇪🇬',
+    'Uzbekistan': '🇺🇿'
+  };
   List<Widget> list = [
     ListTile(
       title: Text('Two-line item'),
