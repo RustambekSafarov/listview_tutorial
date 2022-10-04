@@ -45,6 +45,17 @@ class _listview_pageState extends State<listview_page> {
     'Egypt': '🇪🇬',
   };
 
+  List<String> name = [
+    'Adham',
+    'G`ayrat',
+    'Rustam',
+    'Og`abek',
+    'Turdimurod',
+    'Shohrux',
+    'Zarif',
+    'Axror'
+  ];
+
   List<Widget> getCountries() {
     List<Widget> countryList = [];
 
@@ -62,9 +73,11 @@ class _listview_pageState extends State<listview_page> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 3,
+      itemCount: name.length,
       itemBuilder: ((context, index) {
-        return Text('Item');
+        return ListTile(
+          title: Text(name[index]),
+        );
       }),
     );
   }
