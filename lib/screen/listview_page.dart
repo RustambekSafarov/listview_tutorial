@@ -10,7 +10,8 @@ class listview_page extends StatelessWidget {
     ListTile(
       title: Text('Two-line item'),
       subtitle: Text('Secondary text'),
-      leading: Text('Leading'),
+      leading: Icon(Icons.wifi),
+      trailing: Icon(Icons.remove_circle),
     ),
     ListTile(
       title: Text('Item'),
