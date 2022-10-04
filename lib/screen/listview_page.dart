@@ -76,7 +76,7 @@ class _listview_pageState extends State<listview_page> {
       itemCount: name.length,
       itemBuilder: ((context, index) {
         return ListTile(
-          title: Text(name[index]),
+          title: Text('${index + 1} ${name[index]}'),
         );
       }),
     );
