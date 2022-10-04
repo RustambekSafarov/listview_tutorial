@@ -50,7 +50,9 @@ class _listview_pageState extends State<listview_page> {
     List<Widget> countryList = [];
 
     for (String item in countries.keys) {
-      print(item);
+      countryList.add(ListTile(
+        title: Text(item),
+      ));
     }
 
     return countryList;
