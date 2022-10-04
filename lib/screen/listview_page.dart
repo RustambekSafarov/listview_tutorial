@@ -48,8 +48,9 @@ class _listview_pageState extends State<listview_page> {
 
   List<Widget> getCountries() {
     List<Widget> countryList = [];
-    for (int i = 0; i < 3; i += 1) {
-      countryList.add(Text('$i'));
+
+    for (String item in countries.keys) {
+      print(item);
     }
 
     return countryList;
