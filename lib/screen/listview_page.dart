@@ -7,9 +7,14 @@ class listview_page extends StatelessWidget {
     Key? key,
   }) : super(key: key);
   List<Widget> list = [
-    ItemWidget(title: 'List Item 123'),
-    IconList(),
-    IconList(),
+    ListTile(
+      title: Text('Two-line item'),
+      subtitle: Text('Secondary text'),
+    ),
+    ListTile(
+      title: Text('Item'),
+      subtitle: Text('Secondary text'),
+    )
   ];
   @override
   Widget build(BuildContext context) {
