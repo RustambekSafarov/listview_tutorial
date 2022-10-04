@@ -13,7 +13,7 @@ class listview_page extends StatefulWidget {
 
 class _listview_pageState extends State<listview_page> {
   Map<String, String> countries = {
-    'India': '🇮🇳',
+    'Uzbekistan': '🇺🇿',
     'USA': '🇺🇸',
     'UK': '🇬🇧',
     'Canada': '🇨🇦',
@@ -43,7 +43,6 @@ class _listview_pageState extends State<listview_page> {
     'Syria': '🇸🇾',
     'Turkey': '🇹🇷',
     'Egypt': '🇪🇬',
-    'Uzbekistan': '🇺🇿'
   };
 
   List<Widget> getCountries() {
