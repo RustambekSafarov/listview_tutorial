@@ -61,8 +61,11 @@ class _listview_pageState extends State<listview_page> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: getCountries(),
+    return ListView.builder(
+      itemCount: 3,
+      itemBuilder: ((context, index) {
+        return Text('Item');
+      }),
     );
   }
 }
